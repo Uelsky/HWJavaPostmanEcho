@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "type": "object",
+  "properties": {
+    "args": {
+      "type": "object",
+      "additionalProperties": false,
+      "default": {}
+    },
+    "data": {
+      "type": "string"
+    },
+    "files": {
+      "type": "object",
+      "additionalProperties": false,
+      "default": {}
+    },
+    "form": {
+      "type": "object",
+      "additionalProperties": false,
+      "default": {}
+    },
+    "headers": {
+      "type": "object",
+      "properties": {
+        "host": {
+          "type": "string",
+          "default": "postman-echo.com"
+        },
+        "x-forwarded-proto": {
+          "type": "string",
+          "default": "http"
+        },
+        "x-request-start": {
+          "type": "string"
+        },
+        "connection": {
+          "type": "string",
+          "default": "close"
+        },
+        "content-length": {
+          "type": "string",
+          "default": "0"
+        },
+        "x-forwarded-port": {
+          "type": "string",
+          "default": "443"
+        },
+        "x-amzn-trace-id": {
+          "type": "string",
+          "pattern": "^Root=.+"
+        },
+        "content-type": {
+          "type": "string",
+          "default": "application/json"
+        },
+        "user-agent": {
+          "type": "string"
+        },
+        "accept": {
+          "type": "string",
+          "default": "*/*"
+        },
+        "postman-token": {
+          "type": "string"
+        },
+        "accept-encoding": {
+          "type": "string",
+          "default": "gzip, deflate, br"
+        },
+        "cookie": {
+          "type": "string"
+        }
+      }
+    },
+    "json": {
+      "default": null
+    }
+  },
+  "url": {
+    "type": "string",
+    "default": "http://postman-echo.com/post"
+  }
+}
