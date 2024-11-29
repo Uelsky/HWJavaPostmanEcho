@@ -25,7 +25,7 @@
       "properties": {
         "host": {
           "type": "string",
-          "default": "postman-echo.com"
+          "default": "postman-echo.ru"
         },
         "x-forwarded-proto": {
           "type": "string",
