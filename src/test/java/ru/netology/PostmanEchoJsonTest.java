@@ -16,7 +16,7 @@ public class PostmanEchoJsonTest {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("data", equalTo("same data"))
+                .body("data", equalTo("some data"))
                 .body("json", equalTo(null))
                 .body("url", equalTo("http://postman-echo.com/post"))
                 .body("headers.host", equalTo("postman-echo.com"))
